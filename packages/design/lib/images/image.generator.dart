@@ -39,8 +39,8 @@ class ImageGenerator extends Builder {
     // ManittoIcons 클래스 생성
     iconsBuffer.writeln('part of \'image.dart\';');
     iconsBuffer.writeln();
-    iconsBuffer.writeln('class LookImages extends LookImage {');
-    iconsBuffer.writeln('''  LookImages(
+    iconsBuffer.writeln('class KeykatImages extends KeykatImage {');
+    iconsBuffer.writeln('''  KeykatImages(
       {super.key,
       super.svg,
       super.size,
@@ -65,13 +65,13 @@ class ImageGenerator extends Builder {
 
         // ManittoIcons에 팩토리 메서드 추가
         iconsBuffer.writeln();
-        iconsBuffer.writeln('''  factory LookImages.$constName({
+        iconsBuffer.writeln('''  factory KeykatImages.$constName({
       double? size, 
       Color? color,
       double? width, 
       double? height, 
       BlendMode? colorBlendMode}) {''');
-        iconsBuffer.writeln('    return LookImages(');
+        iconsBuffer.writeln('    return KeykatImages(');
         iconsBuffer.writeln(
           '      svg: \'packages/design/assets/$relativePath\',',
         );

@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class LookImage extends StatelessWidget {
+class KeykatImage extends StatelessWidget {
   /// 아이콘 데이터 (아이콘 폰트를 아이콘으로 쓰는 경우)
   final IconData? icon;
 
@@ -28,7 +28,7 @@ class LookImage extends StatelessWidget {
   /// svg에서 사용할 아이콘 색상 블렌드 모드
   final BlendMode? blendMode;
 
-  LookImage({
+  KeykatImage({
     super.key,
     this.icon,
     this.svg,

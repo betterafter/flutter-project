@@ -15,7 +15,9 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [],
+          children: [
+            KeykatImages.imagesImgLogo(size: 50),
+          ],
         ),
       ),
     );
