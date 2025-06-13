@@ -12,7 +12,7 @@ enum LookRoute {
   const LookRoute({required this.path});
 }
 
-class LookRouter {
+class FlutterRouter {
   /// go router with no parameter
   ///
   /// GoRoute(
@@ -43,6 +43,10 @@ class LookRouter {
   );
 
   static void goHome(BuildContext context) {
-    GoRouter.of(context).go(LookRoute.home.name);
+    GoRouter.of(context).goNamed(LookRoute.home.name);
+  }
+
+  static void replaceHome(BuildContext context) {
+    GoRouter.of(context).pushReplacementNamed(LookRoute.home.name);
   }
 }

@@ -1,1 +1,1 @@
-class LookColor {}
+class FlutterColor {}

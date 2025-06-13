@@ -1,1 +1,1 @@
-class LookTextStyle {}
+class FlutterTextStyle {}
