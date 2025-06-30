@@ -12,7 +12,7 @@ class AutoGenerator extends Builder {
 
     for (final asset in files) {
       final importPath = asset.path.replaceFirst('lib/', '');
-      buffer.writeln("import 'package:${asset.package}/$importPath';");
+      buffer.writeln("export 'package:${asset.package}/$importPath';");
     }
 
     final outputId = buildStep.inputId.changeExtension('.generated.dart');
