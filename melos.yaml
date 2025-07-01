@@ -7,6 +7,9 @@ scripts:
   build:all:
     run: melos exec -c 1 -- "flutter clean && flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs"
 
+  build:di:
+    run: melos exec -c 1 -- "flutter pub run build_runner build --delete-conflicting-outputs"
+
   build:design:
     run: melos exec -c 1 --scope=design -- "find lib -name 'image.generated.dart' -delete && flutter pub run build_runner build --delete-conflicting-outputs"
 
