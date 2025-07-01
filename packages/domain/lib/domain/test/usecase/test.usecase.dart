@@ -1,0 +1,12 @@
+import 'package:domain/domain/test/entity/test.entity.dart';
+import 'package:domain/domain/test/repository/test.repository.dart';
+
+class TestUsecase {
+  final TestRepository testRepository;
+
+  TestUsecase({required this.testRepository});
+
+  Future<List<TestEntity>> getTests() async {
+    return testRepository.getTests();
+  }
+}

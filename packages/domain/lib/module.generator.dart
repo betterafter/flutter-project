@@ -4,7 +4,8 @@ import 'package:glob/glob.dart';
 class AutoGenerator extends Builder {
   @override
   Future<void> build(BuildStep buildStep) async {
-    final files = await buildStep.findAssets(Glob('lib/**.dart')).toList();
+    final files =
+        await buildStep.findAssets(Glob('lib/domain/**.dart')).toList();
 
     final buffer = StringBuffer()
       ..writeln('// GENERATED CODE - DO NOT MODIFY BY HAND')
@@ -12,7 +13,7 @@ class AutoGenerator extends Builder {
 
     for (final asset in files) {
       final importPath = asset.path.replaceFirst('lib/', '');
-      buffer.writeln("import 'package:${asset.package}/$importPath';");
+      buffer.writeln("export 'package:${asset.package}/$importPath';");
     }
 
     final outputId = buildStep.inputId.changeExtension('.generated.dart');
