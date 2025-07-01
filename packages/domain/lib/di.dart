@@ -4,7 +4,7 @@ import 'package:get_it/get_it.dart';
 final di = GetIt.instance;
 
 @InjectableInit(
-  initializerName: 'di',
+  initializerName: 'domain',
   preferRelativeImports: true,
   asExtension: true,
 )

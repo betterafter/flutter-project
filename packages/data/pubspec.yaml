@@ -1,5 +1,6 @@
 name: data
 description: "A new Flutter package project."
+publish_to: none
 version: 0.0.1
 homepage:
 
@@ -14,9 +15,15 @@ dependencies:
   build_runner: ^2.4.6
   source_gen: ^1.4.0
 
+  domain:
+    path: ../domain
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+
+  injectable: ^2.5.0
+  injectable_generator: ^2.5.0
 
 flutter:

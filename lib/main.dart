@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:presentation/util/router.dart';
+import 'package:data/di.dart' as data;
+
+import 'di.dart';
 
 void main() {
   runApp(const MainApp());
+  configureDependencies();
+  data.configureDependencies();
 }
 
 class MainApp extends StatelessWidget {

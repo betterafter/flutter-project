@@ -24,6 +24,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     final isAppSetting = ref.watch(splashSettingProvider);
+    ref.read(splashSettingProvider.notifier).test();
 
     if (isAppSetting) {
       WidgetsBinding.instance.addPostFrameCallback((timeStamp) {

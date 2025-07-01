@@ -28,7 +28,13 @@ dependencies:
   riverpod_generator: ^2.4.0
   riverpod_lint: ^2.3.10
 
+  domain:
+    path: ../domain
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+
+  injectable: ^2.5.0
+  injectable_generator: ^2.5.0
